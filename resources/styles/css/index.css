@@ -51,6 +51,20 @@
 	}
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1){
+	body {
+		background-image: url(../images/background/background-1x.png);
+		background-repeat: repeat;
+	}
+}
+
+@media only screen and (-webkid-min-device-pixel-ratio: 2){
+	body {
+		background-image: url(../images/background/background-2x.png);
+		background-repeat: repeat;
+	}
+}
+
 #lion-glyph {
 	color: whitesmoke;
 }
@@ -80,7 +94,20 @@
 .tap-target {
 	min-width: 40px;
 	min-height: 40px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 	display:inline-block;
+}
+
+
+.tap-target:link,
+.tap-target:active,
+.tap-target:visited {
+	text-decoration: none;
+}
+
+.tap-target:hover {
+	color: whitesmoke;
 }
