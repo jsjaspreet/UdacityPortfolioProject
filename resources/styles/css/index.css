@@ -31,6 +31,7 @@
 	
 	.content {
 		padding-top: 3em;
+		padding-bottom: 3.3em;
 	}
 	
 }
@@ -48,6 +49,7 @@
 	
 	.content {
 		padding-top: 3.3em;
+		padding-bottom: 3.3em;
 	}
 }
 
@@ -101,6 +103,15 @@
 	display:inline-block;
 }
 
+.rounded {
+	border-radius: 50%;
+}
+
+#intro-text {
+	font:  2em/150% Playfair Display, serif;
+	color: white;
+
+}
 
 .tap-target:link,
 .tap-target:active,
