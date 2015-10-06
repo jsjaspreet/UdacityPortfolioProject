@@ -5,16 +5,21 @@ module.exports = function (grunt) {
 				options: {
 					sizes: [{
 						name: 'small',
-						width: 240,
-						height: 240
+						width: 250
 					}, {
 						name: 'large',
-						width: 640
+						width: 900
+					}, {
+						name: 'medium',
+						width: 365
 					}]
 				},
 				files: [{
 					expand: true,
-					src: ['styles/images/**/*.{jpg,gif,png}'],
+					src: ['styles/images/**/*.{jpg,gif,png}',
+						'!styles/images/**/*-large.{jpg,gif,png}',
+						'!styles/images/**/*-small.{jpg,gif,png}',
+						'!styles/images/**/*-medium.{jpg,gif,png}'],
 					cwd: 'resources/',
 					dest: 'dist/'
 				}]

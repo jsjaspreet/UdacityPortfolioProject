@@ -9,6 +9,11 @@
 }
 
 @font-face {
+	font-family: alegraya;
+	src: url(../fonts/AlegreyaSans-Regular.ttf);
+}
+
+@font-face {
 	font-family: audimat;
 	src: url(../fonts/AUdimat-Regular.otf);
 }
@@ -30,8 +35,8 @@
 	}
 	
 	.content {
-		padding-top: 3em;
-		padding-bottom: 3.3em;
+		padding-top: 5em;
+		padding-bottom: 5em;
 	}
 	
 }
@@ -48,8 +53,8 @@
 	}
 	
 	.content {
-		padding-top: 3.3em;
-		padding-bottom: 3.3em;
+		padding-top: 5em;
+		padding-bottom: 5em;
 	}
 }
 
@@ -87,6 +92,11 @@
 	color: gold;
 }
 
+.main-nav {
+	font-family: alegraya;
+	font-size: 2em;
+}
+
 .socicons {
 	font-family: socicon;
 	font-size: 2em;
@@ -111,6 +121,15 @@
 	font:  2em/150% Playfair Display, serif;
 	color: white;
 
+}
+
+.proj-caption {
+	font: 2em/150% Playfair Display, serif;
+	color: antiquewhite;
+}
+
+.pad {
+	padding: 1em;
 }
 
 .tap-target:link,
