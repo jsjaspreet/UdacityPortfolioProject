@@ -41,6 +41,12 @@
 
 }
 
+@media only screen and (max-width: 992px) {
+	#job-title{
+		display: none;
+	}
+}
+
 @media only screen and (min-width: 412px) {
 	.logo {
 		font-size: 2.3em;
