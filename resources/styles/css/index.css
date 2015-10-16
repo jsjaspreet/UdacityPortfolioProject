@@ -33,12 +33,12 @@
 		padding-top: .3em;
 		padding-bottom: .3em;
 	}
-	
+
 	.content {
 		padding-top: 5em;
 		padding-bottom: 5em;
 	}
-	
+
 }
 
 @media only screen and (min-width: 412px) {
@@ -51,7 +51,7 @@
 		padding-top: .3em;
 		padding-bottom: .3em;
 	}
-	
+
 	.content {
 		padding-top: 5em;
 		padding-bottom: 5em;
@@ -60,15 +60,13 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1){
 	body {
-		background-image: url(../images/background/background-1x.png);
-		background-repeat: repeat;
+		background: url(../images/background/background-1x.png) repeat;
 	}
 }
 
-@media only screen and (-webkid-min-device-pixel-ratio: 2){
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
 	body {
-		background-image: url(../images/background/background-2x.png);
-		background-repeat: repeat;
+		background: url(../images/background/background-2x.png) repeat;
 	}
 }
 
@@ -77,11 +75,11 @@
 }
 
 .ge-zodiac {
-	font-family: ge-zodiac;
+	font-family: ge-zodiac, serif;
 }
 
 .name {
-	font-family: audimat-bold;
+	font-family: audimat-bold, serif;
 }
 
 #first-name {
@@ -92,13 +90,17 @@
 	color: gold;
 }
 
+#job-title{
+	font: .5em/100% audimat-bold, sans-serif;
+}
+
 .main-nav {
-	font-family: alegraya;
+	font-family: alegraya, serif;
 	font-size: 2em;
 }
 
 .socicons {
-	font-family: socicon;
+	font-family: socicon, serif;
 	font-size: 2em;
 	color: lightsteelblue;
 }
