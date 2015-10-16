@@ -87,8 +87,6 @@ var projects = {
  */
 bio.display = function () {
     // Manipulate DOM
-    $("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
-    $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
     $("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
     $("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
     $("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
