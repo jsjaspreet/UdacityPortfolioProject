@@ -21,9 +21,9 @@ var bio = {
         "twitter": "@jaspreet_js",
         "location": "Los Angeles"
     },
-    "welcomeMessage": "I'm a software engineer passionate about technology, I'm always eager to learn more about the industry so feel free to connect.",
+    "welcomeMessage": "I'm a software engineer eager to learn more about the industry, feel free to connect.",
     "skills": ["Java", "Hadoop", "HBase", "Hive",
-        "Git", "Docker", "Linux", "HTML", "CSS"],
+        "Git", "Docker", "Linux", "HTML", "CSS", "Javascript"],
     "biopic": "http://jaspreetsingh.me/UdacityPortfolioProject/resources/styles/images/profilepic/profile-pic-small.jpg"
 };
 
@@ -32,7 +32,7 @@ var education = {
     "schools": [{
         "name": "University of California, Berkeley",
         "location": "Berkeley, CA",
-        "degree": "Bachelor of Science",
+        "degree": "B.S.",
         "majors": "Electrical Engineering and Computer Science",
         "dates": "2015",
         "url": "www.berkeley.edu"

@@ -47,20 +47,17 @@ h5 {
 
 
 .date-text {
+  font: 1em/100% 'Droid Sans', sans-serif;
   font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: whitesmoke;
   float: left;
 }
 
 .location-text {
+  font: 1em/100% 'Droid Sans', sans-serif;
   font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: whitesmoke;
   float: right;
-
 }
 
 p {
@@ -77,14 +74,12 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
+  font: 1.5em/110% alegraya, sans-serif;
   color: #f3f3f3;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
   display: none;
 }
 
@@ -92,13 +87,21 @@ a {
   background-color: #f5ae23;
 }
 
-.orange-text {
-  color: #f5ae23;
+.blue-text {
+  color: royalblue;
+}
+
+.darkblue-text {
+  color: darkblue;
+  font-weight: bold;
 }
 
 .white-text {
+  font: 2em/100% alegraya, sans-serif;
   font-weight: bold;
+  padding: 0px 5px 0px 5px;
   color: #fff;
+  -webkit-text-stroke: 0.5px black;
 }
 
 .blue {
@@ -140,7 +143,36 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  border-radius: 20%;
 }
+
+.info-title {
+  font: 1.1em/100% 'Droid Sans', sans-serif;
+}
+
+.info-text{
+  font: 1.1em/100% 'Droid Serif', serif;
+}
+.skills-text {
+  font: 2em/80% alegraya, sans-serif;
+}
+
+.section-entry-title {
+  font: 1.5em/100% 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.section-info {
+  font: 1.3em/100% 'Droid Serif', serif;
+  padding: 5px 0px 10px 0px;
+}
+
+.heading-title {
+  font: 2.5em/100% 'Droid Sans', sans-serif;
+}
+
 
 img {
   padding: 10px;
