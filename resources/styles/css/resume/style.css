@@ -1,242 +1,243 @@
 .clear-fix {
-  overflow: auto;
+    overflow: auto;
 }
 
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+    padding: 0 5%;
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline;
+    font-size: 40px;
+    color: #f5a623;
+    line-height: 48px;
+    display: inline;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #999;
+    line-height: 29px;
+    padding: 10px;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  padding:10px 5%;
+    padding: 10px 5%;
 
 }
 
-
 .date-text {
-  font: 1em/100% 'Droid Sans', sans-serif;
-  font-style: italic;
-  color: whitesmoke;
-  float: left;
+    font: 1em/100% 'Droid Sans', sans-serif;
+    font-style: italic;
+    color: whitesmoke;
+    float: left;
 }
 
 .location-text {
-  font: 1em/100% 'Droid Sans', sans-serif;
-  font-style: italic;
-  color: whitesmoke;
-  float: right;
+    font: 1em/100% 'Droid Sans', sans-serif;
+    font-style: italic;
+    color: whitesmoke;
+    float: right;
 }
 
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
 }
 
 a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
 .welcome-message {
-  font: 1.5em/110% alegraya, sans-serif;
-  color: #f3f3f3;
-  line-height: 28px;
+    font: 1.5em/110% alegraya, sans-serif;
+    color: #f3f3f3;
+    line-height: 28px;
 }
 
 #skills-h3 {
-  display: none;
+    display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+    background-color: #f5ae23;
 }
 
 .blue-text {
-  color: royalblue;
+    color: royalblue;
 }
 
 .darkblue-text {
-  color: darkblue;
-  font-weight: bold;
+    color: darkblue;
+    font-weight: bold;
 }
 
 .white-text {
-  font: 2em/100% alegraya, sans-serif;
-  font-weight: bold;
-  padding: 0px 5px 0px 5px;
-  color: #fff;
-  -webkit-text-stroke: 0.5px black;
+    font: 2em/100% alegraya, sans-serif;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    color: #fff;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .blue {
-  background-color: lightsteelblue;
-  background-color: rgba(176,196,222,.6);
-  padding-bottom: 10px;
-  clear:both;
-  border-radius: 1em;
+    background-color: lightsteelblue;
+    background-color: rgba(176, 196, 222, .6);
+    padding-bottom: 10px;
+    clear: both;
+    border-radius: 1em;
 }
 
 .gold {
-  border-radius: 1em;
-  background-color: lightgoldenrodyellow;
-  background-color: rgba(250, 250, 210, .6);
+    border-radius: 1em;
+    background-color: lightgoldenrodyellow;
+    background-color: rgba(250, 250, 210, .6);
 }
+
 .dark-gray {
-  background-color: #4a4a4a;
+    background-color: #4a4a4a;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .center-content {
-  padding: 2.5% 5%;
+    padding: 2.5% 5%;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-  -webkit-border-radius: 20%;
-  -moz-border-radius: 20%;
-  border-radius: 20%;
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;
 }
 
 .info-title {
-  font: 1.1em/100% 'Droid Sans', sans-serif;
+    font: 1.1em/100% 'Droid Sans', sans-serif;
 }
 
-.info-text{
-  font: 1.1em/100% 'Droid Serif', serif;
+.info-text {
+    font: 1.1em/100% 'Droid Serif', serif;
 }
+
 .skills-text {
-  font: 2em/80% alegraya, sans-serif;
+    font: 2em/80% alegraya, sans-serif;
 }
 
 .section-entry-title {
-  font: 1.5em/100% 'Droid Sans', sans-serif;
-  font-weight: bold;
+    font: 1.5em/100% 'Droid Sans', sans-serif;
+    font-weight: bold;
 }
 
 .section-info {
-  font: 1.3em/100% 'Droid Serif', serif;
-  padding: 5px 0px 10px 0px;
+    font: 1.3em/100% 'Droid Serif', serif;
+    padding: 5px 0px 10px 0px;
 }
 
 .heading-title {
-  font: 2.5em/100% 'Droid Sans', sans-serif;
+    font: 2.5em/100% 'Droid Sans', sans-serif;
 }
-
 
 img {
-  padding: 10px;
+    padding: 10px;
 }
-
 
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
+    #lets-connect {
+        margin-top: 5%;
+    }
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
+@media only screen and (max-width: 900px) {
+    .biopic {
+        width: 175px;
+    }
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+    #lets-connect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 499px) {
-   #mapDiv {
-    padding-bottom: 25%;
-  }
+    #mapDiv {
+        padding-bottom: 25%;
+    }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-  #mapDiv {
-    padding-bottom: 15%;
-  }
+    #mapDiv {
+        padding-bottom: 15%;
+    }
 }
 
 @media only screen and (min-width: 801px) {
-  #mapDiv {
-    padding-bottom: 10%;
-  }
+    #mapDiv {
+        padding-bottom: 10%;
+    }
 }
 
 #map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+    display: block;
+    height: 100%;
+    margin: 0 5%;
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
+    height: 400px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
+    #skills-h3,
+    .biopic {
+        display: block;
+    }
 }

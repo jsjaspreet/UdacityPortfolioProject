@@ -1,151 +1,153 @@
 @font-face {
-	font-family: ge-zodiac;
-	src: url(../fonts/ge-zodiac.ttf);
+    font-family: ge-zodiac;
+    src: url(../fonts/ge-zodiac.ttf);
 }
 
 @font-face {
-	font-family: audimat-bold;
-	src: url(../fonts/AUdimat-Bold.otf);
+    font-family: audimat-bold;
+    src: url(../fonts/AUdimat-Bold.otf);
 }
 
 @font-face {
-	font-family: alegraya;
-	src: url(../fonts/AlegreyaSans-Regular.ttf);
+    font-family: alegraya;
+    src: url(../fonts/AlegreyaSans-Regular.ttf);
 }
 
 @font-face {
-	font-family: audimat;
-	src: url(../fonts/AUdimat-Regular.otf);
+    font-family: audimat;
+    src: url(../fonts/AUdimat-Regular.otf);
 }
 
 @font-face {
-	font-family: socicon;
-	src: url(../fonts/socicon.ttf);
+    font-family: socicon;
+    src: url(../fonts/socicon.ttf);
 }
 
 @media only screen and (max-width: 431px) {
-	.logo {
-		font-size: 1.8em;
-	}
-	.navbar,
-	.navbar-brand {
-		min-height: 2em;
-		padding-top: .3em;
-		padding-bottom: .3em;
-	}
+    .logo {
+        font-size: 1.8em;
+    }
 
-	.content {
-		padding-top: 5em;
-		padding-bottom: 5em;
-	}
+    .navbar,
+    .navbar-brand {
+        min-height: 2em;
+        padding-top: .3em;
+        padding-bottom: .3em;
+    }
+
+    .content {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
 
 }
 
 @media only screen and (max-width: 992px) {
-	#job-title{
-		display: none;
-	}
+    #job-title {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 432px) {
-	.logo {
-		font-size: 2.3em;
-	}
-	.navbar,
-	.navbar-brand {
-		min-height: 3em;
-		padding-top: .3em;
-		padding-bottom: .3em;
-	}
+    .logo {
+        font-size: 2.3em;
+    }
 
-	.content {
-		padding-top: 8em;
-		padding-bottom: 8em;
-	}
+    .navbar,
+    .navbar-brand {
+        min-height: 3em;
+        padding-top: .3em;
+        padding-bottom: .3em;
+    }
+
+    .content {
+        padding-top: 8em;
+        padding-bottom: 8em;
+    }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1){
-	body {
-		background: url(../images/background/background-1x.png) repeat;
-	}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        background: url(../images/background/background-1x.png) repeat;
+    }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2){
-	body {
-		background: url(../images/background/background-2x.png) repeat;
-	}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background: url(../images/background/background-2x.png) repeat;
+    }
 }
 
 #lion-glyph {
-	color: whitesmoke;
+    color: whitesmoke;
 }
 
 .ge-zodiac {
-	font-family: ge-zodiac, serif;
+    font-family: ge-zodiac, serif;
 }
 
 .name {
-	font-family: audimat-bold, serif;
+    font-family: audimat-bold, serif;
 }
 
 #first-name {
-	color: royalblue;
+    color: royalblue;
 }
 
 #last-name {
-	color: gold;
+    color: gold;
 }
 
-#job-title{
-	font: .5em/100% audimat-bold, sans-serif;
+#job-title {
+    font: .5em/100% audimat-bold, sans-serif;
 }
 
 .main-nav {
-	font-family: alegraya, serif;
-	font-size: 2em;
+    font-family: alegraya, serif;
+    font-size: 2em;
 }
 
 .socicons {
-	font-family: socicon, serif;
-	font-size: 2em;
-	color: lightsteelblue;
+    font-family: socicon, serif;
+    font-size: 2em;
+    color: lightsteelblue;
 }
 
 .tap-target {
-	min-width: 40px;
-	min-height: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	display:inline-block;
+    min-width: 40px;
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
 }
 
 .rounded {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 #intro-text {
-	font:  2em/150% Playfair Display, serif;
-	color: white;
+    font: 2em/150% Playfair Display, serif;
+    color: white;
 
 }
 
 .proj-caption {
-	font: 2em/150% Playfair Display, serif;
-	color: antiquewhite;
+    font: 2em/150% Playfair Display, serif;
+    color: antiquewhite;
 }
 
 .pad {
-	padding: 1em;
+    padding: 1em;
 }
 
 .tap-target:link,
 .tap-target:active,
 .tap-target:visited {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .tap-target:hover {
-	color: whitesmoke;
+    color: whitesmoke;
 }
