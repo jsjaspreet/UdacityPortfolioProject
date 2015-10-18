@@ -170,7 +170,23 @@ function initializeMap() {
 
         // hmmmm, I wonder what this is about...
         google.maps.event.addListener(marker, 'click', function() {
-            // your code goes here!
+            if(name.lastIndexOf("Los Ange", 0) === 0){
+                infoWindow.setContent("I grew up and currently live in Los Angeles!");
+                infoWindow.open(map, this);
+            }
+            else if (name.lastIndexOf("San Fra", 0) === 0){
+                infoWindow.setContent("I spent 2 summers interning for Practice Fusion while " +
+                                      "working toward completing my degree.");
+                infoWindow.open(map, this);
+            }
+            else if (name.lastIndexOf("Berk", 0) === 0){
+                infoWindow.setContent("I graduated from Cal in 2015, GO BEARS!!!");
+                infoWindow.open(map, this);
+            }
+            else if (name.lastIndexOf("Glen", 0) === 0){
+                infoWindow.setContent("I currently work for YP in Glendale.");
+                infoWindow.open(map, this);
+            }
         });
 
         // this is where the pin actually gets added to the map.
