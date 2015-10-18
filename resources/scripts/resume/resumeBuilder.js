@@ -23,8 +23,9 @@ var bio = {
     },
     "welcomeMessage": "I'm a software engineer eager to learn more about the industry, feel free to connect.",
     "skills": ["Java", "Hadoop", "HBase", "Hive",
-        "Git", "Docker", "Linux", "HTML", "CSS", "Javascript"],
-    "biopic": "http://jaspreetsingh.me/UdacityPortfolioProject/resources/styles/images/profilepic/profile-pic-small.jpg"
+        "Git", "Docker", "Linux", "HTML", "CSS", "Javascript"
+    ],
+    "biopic": "http://jaspreetsingh.me/PortfolioProject/resources/styles/images/profilepic/profile-pic-small.jpg"
 };
 
 // Initialize Education data
@@ -33,15 +34,14 @@ var education = {
         "name": "University of California, Berkeley",
         "location": "Berkeley, CA",
         "degree": "B.S.",
-        "majors": "Electrical Engineering and Computer Science",
-        "dates": "2015",
+        "majors": ["Electrical Engineering and Computer Science"],
+        "dates": 2015,
         "url": "www.berkeley.edu"
-    }
-    ],
+    }],
     "onlineCourses": [{
         "title": "Front-End Web Developer Nanodegree",
         "school": "Udacity",
-        "date": "2015",
+        "date": 2015,
         "url": "www.udacity.com"
     }]
 };
@@ -53,23 +53,23 @@ var work = {
         "title": "Software Engineer",
         "location": "Glendale, California",
         "dates": "06/01/15 - Present",
-        "description": "I'm a generalist for YP, I mainly work with big data (Hbase/Hive/Custom Map Reduce jobs) and designing API's."
-    },
-        {
-            "employer": "YP",
-            "title": "Data Engineering Intern",
-            "location": "Glendale, California",
-            "dates": "06/01/14 - 09/01/14",
-            "description": "As an intern for YP, I worked with big data (Hbase/Hive/Custom Map Reduce jobs) and designing API's."
-        },
-        {
-            "employer": "Practice Fusion",
-            "title": "Technology Operations Intern",
-            "location": "San Francisco, California",
-            "dates": "06/01/13 - 09/01/13",
-            "description": "I provided general technical support for Windows 7 / Mac OS X operating systems and helped on-board new employees with their technical equipment"
-        }
-    ]
+        "description": "I'm a generalist for YP, " +
+            "I mainly work with big data (Hbase/Hive/Custom Map Reduce jobs) and designing API's."
+    }, {
+        "employer": "YP",
+        "title": "Data Engineering Intern",
+        "location": "Glendale, California",
+        "dates": "06/01/14 - 09/01/14",
+        "description": "As an intern for YP, I worked with big data " +
+            "(Hbase/Hive/Custom Map Reduce jobs) and designing API's."
+    }, {
+        "employer": "Practice Fusion",
+        "title": "Technology Operations Intern",
+        "location": "San Francisco, California",
+        "dates": "06/01/13 - 09/01/13",
+        "description": "I provided general technical support for Windows 7 / Mac OS X operating systems " +
+            "and helped on-board new employees with their technical equipment"
+    }]
 };
 
 // Initialize projects data
@@ -85,7 +85,7 @@ var projects = {
 /*
  *  Stage 2: Create display functions for DOM manipulation purposes
  */
-bio.display = function () {
+bio.display = function() {
     // Manipulate DOM
     $("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
     $("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
@@ -98,9 +98,14 @@ bio.display = function () {
     for (var i = 0; i < bio.skills.length; i++) {
         $("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
     }
+    $("#footerContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
+    $("#footerContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
+    $("#footerContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+    $("#footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+    $("#footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 };
 
-work.display = function () {
+work.display = function() {
     // for each job..
     for (var i = 0; i < work.jobs.length; i++) {
         // append a work directory
@@ -108,14 +113,15 @@ work.display = function () {
         // select dom element for easy insertion
         var workEntry = $("#workExperience").children().last();
         // append work entry information
-        workEntry.append(HTMLworkEmployer.replace("%data%", work.jobs[i].employer) + HTMLworkTitle.replace("%data%", work.jobs[i].title));
+        workEntry.append(HTMLworkEmployer.replace("%data%", work.jobs[i].employer) +
+            HTMLworkTitle.replace("%data%", work.jobs[i].title));
         workEntry.append(HTMLworkDates.replace("%data%", work.jobs[i].dates));
         workEntry.append(HTMLworkLocation.replace("%data%", work.jobs[i].location));
         workEntry.append(HTMLworkDescription.replace("%data%", work.jobs[i].description));
     }
 };
 
-projects.display = function () {
+projects.display = function() {
     // for each project
     for (var i = 0; i < projects.projects.length; i++) {
         // append a project start element
@@ -131,7 +137,7 @@ projects.display = function () {
     }
 };
 
-education.display = function () {
+education.display = function() {
     // for each school
     for (var i = 0; i < education.schools.length; i++) {
         // append school elem
@@ -139,17 +145,23 @@ education.display = function () {
         // select elem for easy dom manipulation
         var schoolEntry = $("#education").children().last();
         // insert data
-        schoolEntry.append(HTMLschoolName.replace("%data%", education.schools[i].name) + HTMLschoolDegree.replace("%data%", education.schools[i].degree));
+        schoolEntry.append(HTMLschoolName.replace("%data%", education.schools[i].name) +
+            HTMLschoolDegree.replace("%data%", education.schools[i].degree));
         schoolEntry.append(HTMLschoolDates.replace("%data%", education.schools[i].dates));
         schoolEntry.append(HTMLschoolLocation.replace("%data%", education.schools[i].location));
-        schoolEntry.append(HTMLschoolMajor.replace("%data%", education.schools[i].majors));
+
+        for (var j = 0; j < education.schools[i].majors.length; j++) {
+            schoolEntry.append(HTMLschoolMajor.replace("%data%", education.schools[i].majors[j]));
+        }
     }
+
     $("#education").append(HTMLonlineClasses);
     // for each online course
     for (i = 0; i < education.onlineCourses.length; i++) {
         $("#education").append(HTMLschoolStart);
         var schoolEntry = $("#education").children().last();
-        schoolEntry.append(HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title) + HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school));
+        schoolEntry.append(HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title) +
+            HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school));
         schoolEntry.append(HTMLonlineDates.replace("%data%", education.onlineCourses[i].date));
         schoolEntry.append(HTMLonlineURL.replace("%data%", education.onlineCourses[i].url));
     }
@@ -169,16 +181,3 @@ education.display();
  */
 
 $("#mapDiv").append(googleMap);
-
-
-
-
-
-
-
-
-
-
-
-
-

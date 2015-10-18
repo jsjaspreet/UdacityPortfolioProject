@@ -27,11 +27,15 @@ module.exports = function (grunt) {
         },
         clean: {
             dist: ["dist/"]
+        },
+        "jsbeautifier": {
+            files: ["resources/scripts/**/*"]
         }
     });
 
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.registerTask('default', ['clean', 'responsive_images']);
 
 };
