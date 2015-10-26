@@ -37,5 +37,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-jsbeautifier');
     grunt.registerTask('default', ['clean', 'responsive_images']);
+    grunt.registerTask('jsbeautify', ['jsbeautifier']);
 
 };
